@@ -1,0 +1,26 @@
+[{
+    "preferredName": "Alex",
+    "firstName": "Smith",
+    "lastName": "Ady",
+    "nationality": "German",
+    "gender": "Male",
+    "mobileNo": "+491626307134",
+    "numberOffice": "05486851755",
+    "position": "Developer",
+    "hireadDate": "09/06/2018",
+    "Probation End Date": "09/10/2018",
+    "legalCountryOfResidence": "Germany",
+    "healthInsurancePolicy": "18 03 07 Test plan"
+},{
+    "preferredName": "Andy",
+    "firstName": "Sims",
+    "lastName": "John",
+    "nationality": "German",
+    "gender": "Male",
+    "mobileNo": "+49162877134",
+    "numberOffice": "05486878955",
+    "position": "Developer",
+    "legalCountryOfResidence": "Germany",
+    "healthInsurancePolicy": "18 03 07 Test plan"
+}
+]

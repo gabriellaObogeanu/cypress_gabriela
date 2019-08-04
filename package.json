@@ -1,0 +1,20 @@
+{
+  "name": "cypress-example",
+  "version": "1.0.0",
+  "description": "An example Cypress e2e test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress open",
+    "cypress:open": "cypress open",
+    "cy:cli": "cypress cli"
+  },
+  "keywords": [
+    "test",
+    "automation"
+  ],
+  "author": "Gabriela",
+  "devDependencies": {
+    "cypress": "^3.4.0",
+    "cypress-xpath": "^1.4.0"
+  }
+}
