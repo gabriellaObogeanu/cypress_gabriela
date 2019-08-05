@@ -30,17 +30,12 @@ describe('add two employees and delete them', function () {
       cy.wrap(employeeJSON).each(employee => {
         cy.get('input[name="preferredName"]').type(employee.preferredName);
         cy.get('input[name="firstName"]').type(employee.firstName);
-
         cy.get('input[name="lastName"]').type(employee.lastName);
         cy.contains('Please select nationality').click();
-        cy.get('.ember-power-select-search-input').type(
-          employee.nationality
-        );
+        cy.get('.ember-power-select-search-input').type(employee.nationality);
         cy.contains(employee.nationality).click();
         cy.get('input[name="mobileNumber"]').type(employee.mobileNo);
-        cy.get('input[name="workEmail"]').type(
-          'test' + Math.random() * 4 + '@example.com'
-        );
+        cy.get('input[name="workEmail"]').type('test' + Math.random() * 4 + '@example.com');
         cy.get('input[name="officeNumber"]').type(employee.numberOffice);
         cy.get('input[name="position"]').type(employee.position);
         cy.contains('Please select country of residence').click();
@@ -50,7 +45,7 @@ describe('add two employees and delete them', function () {
         cy.contains(employee.healthInsurancePolicy).click();
         cy.contains('Create and add another').click();
         cy.wait(1000);
-        cy.get('[class="flash-message alert alert-success--inverted ember-view"]').should('be.visible');
+        cy.get('.alert-success--inverted').should('be.visible');
       });
     });
   });
